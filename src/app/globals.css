@@ -24,3 +24,16 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* --- Kalkulačka animácia --- */
+#kalkulacka {
+  position: fixed;
+  right: -180px; /* Za okrajom */
+  top: 30%;
+  transition: right 0.7s cubic-bezier(.46,1.48,.56,.9);
+  z-index: 999;
+}
+#kalkulacka.vystup {
+  right: 50%;
+  transform: translateX(50%);
+}
